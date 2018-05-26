@@ -6,6 +6,7 @@
     <description>Recent content in Security on GT on the web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Sun, 26 Jun 2016 01:36:00 +0300</lastBuildDate>
     
 	<atom:link href="https://gtrafimenkov.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +14,7 @@
     <item>
       <title>Secure and easy to use GnuPG setup</title>
       <link>https://gtrafimenkov.github.io/post/2016-06-26-secure-and-easy-to-use-gnupg-setup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 26 Jun 2016 01:36:00 +0300</pubDate>
       
       <guid>https://gtrafimenkov.github.io/post/2016-06-26-secure-and-easy-to-use-gnupg-setup/</guid>
       <description>&lt;p&gt;Using GnuPG requires balancing security against ease of use.&lt;/p&gt;

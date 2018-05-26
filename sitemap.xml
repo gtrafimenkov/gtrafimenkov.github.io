@@ -17,6 +17,20 @@
   </url>
   
   <url>
+    <loc>https://gtrafimenkov.github.io/post/2016-06-26-secure-and-easy-to-use-gnupg-setup/</loc>
+    <lastmod>2016-06-26T01:36:00+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://gtrafimenkov.github.io/post/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/</loc>
+    <lastmod>2016-06-19T12:04:00+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://gtrafimenkov.github.io/post/2016-06-18-slave-of-no-one/</loc>
     <lastmod>2016-06-18T21:54:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -45,6 +59,7 @@
   
   <url>
     <loc>https://gtrafimenkov.github.io/tags/gnupg/</loc>
+    <lastmod>2016-06-26T01:36:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -57,13 +72,8 @@
   </url>
   
   <url>
-    <loc>https://gtrafimenkov.github.io/post/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://gtrafimenkov.github.io/tags/howto/</loc>
+    <lastmod>2016-06-19T12:04:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -83,20 +93,15 @@
   </url>
   
   <url>
-    <loc>https://gtrafimenkov.github.io/post/2016-06-26-secure-and-easy-to-use-gnupg-setup/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://gtrafimenkov.github.io/tags/security/</loc>
+    <lastmod>2016-06-26T01:36:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://gtrafimenkov.github.io/tags/</loc>
-    <lastmod>2018-05-13T00:22:06+03:00</lastmod>
+    <lastmod>2016-06-26T01:36:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -110,6 +115,7 @@
   
   <url>
     <loc>https://gtrafimenkov.github.io/tags/virtualbox/</loc>
+    <lastmod>2016-06-19T12:04:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

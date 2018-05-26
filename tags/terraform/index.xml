@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terraform on GT on the web</title>
+    <link>https://gtrafimenkov.github.io/tags/terraform/</link>
+    <description>Recent content in Terraform on GT on the web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 13 May 2018 00:22:06 +0300</lastBuildDate>
+    
+	<atom:link href="https://gtrafimenkov.github.io/tags/terraform/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hcloud With Terraform</title>
+      <link>https://gtrafimenkov.github.io/post/2018-05-13-hcloud-with-terraform/</link>
+      <pubDate>Sun, 13 May 2018 00:22:06 +0300</pubDate>
+      
+      <guid>https://gtrafimenkov.github.io/post/2018-05-13-hcloud-with-terraform/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.hetzner.com/cloud&#34;&gt;Hetzner Cloud&lt;/a&gt; is an excellent cloud provider.&lt;/p&gt;
+
+&lt;p&gt;Here is a quick example of how to create a server on Hetzner Cloud using Terraform.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

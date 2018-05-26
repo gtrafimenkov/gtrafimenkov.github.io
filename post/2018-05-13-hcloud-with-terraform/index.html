@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>GT on the web</title>
+  <title>Hcloud With Terraform - GT on the web</title>
   <link rel="alternate" hreflang="en" href="https://gtrafimenkov.github.io" />
 
 <meta name="renderer" content="webkit" />
@@ -25,7 +25,11 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="xianmin" />
-  <meta name="description" content="Gennady Trafimenkov&#39;s blog" />
+  <meta name="description" content="Hetzner Cloud is an excellent cloud provider.
+Here is a quick example of how to create a server on Hetzner Cloud using Terraform.
+
+" />
+
 
 
 
@@ -35,8 +39,7 @@
 <meta name="generator" content="Hugo 0.40.3" />
 
 
-<link rel="canonical" href="https://gtrafimenkov.github.io/" />
-<link href="https://gtrafimenkov.github.io/index.xml" rel="alternate" type="application/rss+xml" title="GT on the web" />
+<link rel="canonical" href="https://gtrafimenkov.github.io/post/2018-05-13-hcloud-with-terraform/" />
 
 
 
@@ -56,14 +59,20 @@
 
 
 
-<meta property="og:title" content="GT on the web" />
-<meta property="og:description" content="Gennady Trafimenkov&#39;s blog" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://gtrafimenkov.github.io/" />
+<meta property="og:title" content="Hcloud With Terraform" />
+<meta property="og:description" content="Hetzner Cloud is an excellent cloud provider.
+
+Here is a quick example of how to create a server on Hetzner Cloud using Terraform.
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gtrafimenkov.github.io/post/2018-05-13-hcloud-with-terraform/" />
 
 
 
-<meta property="og:updated_time" content="2017-08-20T21:38:52&#43;08:00"/>
+<meta property="article:published_time" content="2018-05-13T00:22:06&#43;03:00"/>
+
+<meta property="article:modified_time" content="2018-05-13T00:22:06&#43;03:00"/>
 
 
 
@@ -74,12 +83,29 @@
 
 
 
-<meta itemprop="name" content="GT on the web">
-<meta itemprop="description" content="Gennady Trafimenkov&#39;s blog">
 
+<meta itemprop="name" content="Hcloud With Terraform">
+<meta itemprop="description" content="Hetzner Cloud is an excellent cloud provider.
+
+Here is a quick example of how to create a server on Hetzner Cloud using Terraform.
+
+">
+
+
+<meta itemprop="datePublished" content="2018-05-13T00:22:06&#43;03:00" />
+<meta itemprop="dateModified" content="2018-05-13T00:22:06&#43;03:00" />
+<meta itemprop="wordCount" content="169">
+
+
+
+<meta itemprop="keywords" content="terraform,hcloud," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="GT on the web"/>
-<meta name="twitter:description" content="Gennady Trafimenkov&#39;s blog"/>
+<meta name="twitter:title" content="Hcloud With Terraform"/>
+<meta name="twitter:description" content="Hetzner Cloud is an excellent cloud provider.
+
+Here is a quick example of how to create a server on Hetzner Cloud using Terraform.
+
+"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -240,152 +266,176 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-  <section id="posts" class="posts">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">Hcloud With Terraform</h1>
+      
+      <div class="post-meta">
+        <span class="post-time"> 2018-05-13 </span>
+        <div class="post-category">
+            
+              <a href="/categories/devops/"> devops </a>
+            
+          </div>
+        <span class="more-meta"> 169 words </span>
+        <span class="more-meta"> 1 min read </span>
+      </div>
+    </header>
+
     
     
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
     
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/2018-05-13-hcloud-with-terraform/">Hcloud With Terraform</a></h1>
+  </div>
+</div>
+
     
-    <div class="post-meta">
-      <span class="post-time"> 2018-05-13 </span>
-      <div class="post-category">
-          
-            <a href="/categories/devops/"> devops </a>
-          
-        </div>
-      <span class="more-meta"> 169 words </span>
-      <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
+    <div class="post-content">
       <p><a href="https://www.hetzner.com/cloud">Hetzner Cloud</a> is an excellent cloud provider.</p>
 
 <p>Here is a quick example of how to create a server on Hetzner Cloud using Terraform.</p>
 
 <p></p>
+
+<ul>
+<li><p>Install Terraform.</p></li>
+
+<li><p>Install <a href="https://github.com/hetznercloud/terraform-provider-hcloud">Terraform Plugin for hetzner cloud</a>.</p></li>
+
+<li><p>Generate new API token in the Hetzner Cloud Console.</p></li>
+
+<li><p>Create terraform.tf with the following content:</p></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">variable &#34;hcloud_token&#34; {}
+
+# Configure the Hetzner Cloud Provider
+provider &#34;hcloud&#34; {
+  token = &#34;${var.hcloud_token}&#34;
+}
+
+#  Main ssh key
+resource &#34;hcloud_ssh_key&#34; &#34;default&#34; {
+  name       = &#34;main ssh key&#34;
+  public_key = &#34;${file(&#34;~/.ssh/id_rsa.pub&#34;)}&#34;
+}
+
+resource &#34;hcloud_server&#34; &#34;testnode1&#34; {
+  name        = &#34;testnode1&#34;
+  image       = &#34;ubuntu-16.04&#34;
+  server_type = &#34;cx11&#34;
+  ssh_keys    = [&#34;${hcloud_ssh_key.default.name}&#34;]
+}
+
+output &#34;public_ip4&#34; {
+  value = &#34;${hcloud_server.testnode1.ipv4_address}&#34;
+}</pre></td></tr></table>
+</div>
+</div>
+<ul>
+<li>Create server by running:</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">export</span> <span class="nv">TF_VAR_hcloud_token</span><span class="o">=</span>YOUR_SECRET_TOKEN
+terraform init
+terraform plan
+terraform apply</code></pre></td></tr></table>
+</div>
+</div>
+<ul>
+<li>You can now log in into the server with command:</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">ssh root@<span class="k">$(</span>terraform output public_ip4<span class="k">)</span></code></pre></td></tr></table>
+</div>
+</div>
+<ul>
+<li>When you are done, delete the server by running:</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">terraform destroy</code></pre></td></tr></table>
+</div>
+</div>
     </div>
-    <div class="read-more">
-      <a href="/post/2018-05-13-hcloud-with-terraform/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
 
     
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/2016-06-18-slave-of-no-one/">Slave of no one</a></h1>
     
-    <div class="post-meta">
-      <span class="post-time"> 2016-06-18 </span>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/terraform/">terraform</a>
+          
+          <a href="/tags/hcloud/">hcloud</a>
+          
+        </div>
+
       
-      <span class="more-meta"> 121 words </span>
-      <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/2016-06-18-slave-of-no-one/">
+            <span class="next-text nav-default">Slave of no one</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
     
-    <div class="post-summary">
-      <p>Authors of <a href="http://redis.io">redis</a> have their hearts in the right place.</p>
-
-<p></p>
-    </div>
-    <div class="read-more">
-      <a href="/post/2016-06-18-slave-of-no-one/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/">How to use a physical harddrive in VirtualBox</a></h1>
-    
-    <div class="post-meta">
-      <span class="post-time"> 0001-01-01 </span>
-      
-      <span class="more-meta"> 92 words </span>
-      <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>In some cases it might be very convinient to use a physical harddrive (USB stick, SD card, etc.) as a disk for a virtual machine.  It is quite easy on Linux.</p>
-
-<p></p>
-    </div>
-    <div class="read-more">
-      <a href="/post/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/2016-06-26-secure-and-easy-to-use-gnupg-setup/">Secure and easy to use GnuPG setup</a></h1>
-    
-    <div class="post-meta">
-      <span class="post-time"> 0001-01-01 </span>
-      
-      <span class="more-meta"> 391 words </span>
-      <span class="more-meta"> 2 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>Using GnuPG requires balancing security against ease of use.</p>
-
-<p></p>
-    </div>
-    <div class="read-more">
-      <a href="/post/2016-06-26-secure-and-easy-to-use-gnupg-setup/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-  </section>
 
   
-  
 
-
-
-  
-  
   
 
   
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-
-
-
-
+  </article>
         </div>
       </div>
     </main>

@@ -6,10 +6,19 @@
     <description>Recent content in Tags on GT on the web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Jun 2016 01:36:00 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 29 Jun 2018 21:13:06 +0300</lastBuildDate>
     
 	<atom:link href="https://gtrafimenkov.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Deb</title>
+      <link>https://gtrafimenkov.github.io/tags/deb/</link>
+      <pubDate>Fri, 29 Jun 2018 21:13:06 +0300</pubDate>
+      
+      <guid>https://gtrafimenkov.github.io/tags/deb/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Gnupg</title>
@@ -17,6 +26,15 @@
       <pubDate>Sun, 26 Jun 2016 01:36:00 +0300</pubDate>
       
       <guid>https://gtrafimenkov.github.io/tags/gnupg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://gtrafimenkov.github.io/tags/go/</link>
+      <pubDate>Fri, 29 Jun 2018 21:13:06 +0300</pubDate>
+      
+      <guid>https://gtrafimenkov.github.io/tags/go/</guid>
       <description></description>
     </item>
     
@@ -32,7 +50,7 @@
     <item>
       <title>Howto</title>
       <link>https://gtrafimenkov.github.io/tags/howto/</link>
-      <pubDate>Sun, 19 Jun 2016 12:04:00 +0300</pubDate>
+      <pubDate>Fri, 29 Jun 2018 21:13:06 +0300</pubDate>
       
       <guid>https://gtrafimenkov.github.io/tags/howto/</guid>
       <description></description>

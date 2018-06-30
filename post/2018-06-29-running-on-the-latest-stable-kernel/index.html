@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Archive - GT on the web</title>
+  <title>Running the latest Linux kernel - GT on the web</title>
   <link rel="alternate" hreflang="en" href="https://gtrafimenkov.github.io" />
 
 <meta name="renderer" content="webkit" />
@@ -25,7 +25,10 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="xianmin" />
-  <meta name="description" content="Gennady Trafimenkov&#39;s blog" />
+  <meta name="description" content="When Meltdown and Spectre struck, it took Ubuntu a few days to release an updated kernel. It made me think if I could run the latest unmodified (vanilla) kernel from kernel.org and didn&amp;rsquo;t have to wait for the distribution to release their version.
+
+" />
+
 
 
 
@@ -35,8 +38,7 @@
 <meta name="generator" content="Hugo 0.40.3" />
 
 
-<link rel="canonical" href="https://gtrafimenkov.github.io/post/" />
-<link href="https://gtrafimenkov.github.io/post/index.xml" rel="alternate" type="application/rss+xml" title="GT on the web" />
+<link rel="canonical" href="https://gtrafimenkov.github.io/post/2018-06-29-running-on-the-latest-stable-kernel/" />
 
 
 
@@ -56,14 +58,21 @@
 
 
 
-<meta property="og:title" content="Posts" />
-<meta property="og:description" content="Gennady Trafimenkov&#39;s blog" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://gtrafimenkov.github.io/post/" />
+<meta property="og:title" content="Running the latest Linux kernel" />
+<meta property="og:description" content="When Meltdown and Spectre struck, it took Ubuntu a few days
+to release an updated kernel.  It made me think if I could run the latest unmodified (vanilla)
+kernel from kernel.org and didn&rsquo;t have to wait for the distribution to
+release their version.
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gtrafimenkov.github.io/post/2018-06-29-running-on-the-latest-stable-kernel/" />
 
 
 
-<meta property="og:updated_time" content="2016-06-26T01:36:00&#43;03:00"/>
+<meta property="article:published_time" content="2018-06-29T22:57:00&#43;03:00"/>
+
+<meta property="article:modified_time" content="2018-06-29T22:57:00&#43;03:00"/>
 
 
 
@@ -74,12 +83,31 @@
 
 
 
-<meta itemprop="name" content="Posts">
-<meta itemprop="description" content="Gennady Trafimenkov&#39;s blog">
 
+<meta itemprop="name" content="Running the latest Linux kernel">
+<meta itemprop="description" content="When Meltdown and Spectre struck, it took Ubuntu a few days
+to release an updated kernel.  It made me think if I could run the latest unmodified (vanilla)
+kernel from kernel.org and didn&rsquo;t have to wait for the distribution to
+release their version.
+
+">
+
+
+<meta itemprop="datePublished" content="2018-06-29T22:57:00&#43;03:00" />
+<meta itemprop="dateModified" content="2018-06-29T22:57:00&#43;03:00" />
+<meta itemprop="wordCount" content="178">
+
+
+
+<meta itemprop="keywords" content="linux-kernel," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="Gennady Trafimenkov&#39;s blog"/>
+<meta name="twitter:title" content="Running the latest Linux kernel"/>
+<meta name="twitter:description" content="When Meltdown and Spectre struck, it took Ubuntu a few days
+to release an updated kernel.  It made me think if I could run the latest unmodified (vanilla)
+kernel from kernel.org and didn&rsquo;t have to wait for the distribution to
+release their version.
+
+"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -240,89 +268,89 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<section id="archive" class="archive">
+          <article class="post bg-white">
     
-      <div class="collection-title">
-        <h2 class="archive-year">2016</h2>
+    <header class="post-header">
+      <h1 class="post-title">Running the latest Linux kernel</h1>
+      
+      <div class="post-meta">
+        <span class="post-time"> 2018-06-29 </span>
+        <div class="post-category">
+            
+              <a href="/categories/devops/"> devops </a>
+            
+          </div>
+        <span class="more-meta"> 178 words </span>
+        <span class="more-meta"> 1 min read </span>
       </div>
+    </header>
 
-    <div class="archive-post">
-      <span class="archive-post-time">
-        2016-06-26
-      </span>
-      <span class="archive-post-title">
-        <a href="/post/2016-06-26-secure-and-easy-to-use-gnupg-setup/" class="archive-post-link">
-          Secure and easy to use GnuPG setup
-        </a>
-      </span>
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Table of Contents</h2>
+  <div class="post-toc-content">
+    
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>When <a href="https://meltdownattack.com/">Meltdown and Spectre</a> struck, it took Ubuntu a few days
+to release an updated kernel.  It made me think if I could run the latest unmodified (vanilla)
+kernel from <a href="https://kernel.org">kernel.org</a> and didn&rsquo;t have to wait for the distribution to
+release their version.</p>
+
+<p></p>
+
+<p>As it turned out, running the latest kernel is a pleasant experience.  Only once I&rsquo;ve encountered
+a bug, when WiFi on my laptop stopped working after upgrading to version 4.17.2.</p>
+
+<p>There is a downside, of course: you have to built the kernel yourself.  Instructions and scripts
+for building a kernel for Debian/Ubuntu can be found here: <a href="https://github.com/devops-toolkit/recent-stable-kernel">devops-toolkit/recent-stable-kernel</a>.</p>
+
+<p>On a side note, I was surprized to see how many changes are released every time.  It must be
+a difficult job for a distribution to analyze all these changes and try to pick important
+ones for their own kernel.  Especially since kernel developers almost never mark security
+fixes as such.</p>
+
+<p>Here is <a href="http://www.kroah.com/log/blog/2018/02/05/linux-kernel-release-model/">a good blog post</a>
+by Greg Kroah-Hartman, a kernel developer who is maintaining the stable kernel branch, about
+the linux kernel release and development models.</p>
     </div>
+
+    
     
 
-    <div class="archive-post">
-      <span class="archive-post-time">
-        2016-06-19
-      </span>
-      <span class="archive-post-title">
-        <a href="/post/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/" class="archive-post-link">
-          How to use a physical harddrive in VirtualBox
-        </a>
-      </span>
-    </div>
+    
     
 
-    <div class="archive-post">
-      <span class="archive-post-time">
-        2016-06-18
-      </span>
-      <span class="archive-post-title">
-        <a href="/post/2016-06-18-slave-of-no-one/" class="archive-post-link">
-          Slave of no one
-        </a>
-      </span>
-    </div></section>
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/linux-kernel/">linux-kernel</a>
+          
+        </div>
 
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
       
-      <li >
-        <a href="/post/">1</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/post/page/2/">2</a>
-      </li>
-      
-    </ul>
-  </nav>
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/2018-06-29-build-deb-package-using-go/">
+            <span class="next-text nav-default">How to build a debian package using Go</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+    
 
   
+
   
 
-
-
-
-
+  
+  </article>
         </div>
       </div>
     </main>

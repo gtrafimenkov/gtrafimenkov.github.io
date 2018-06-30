@@ -26,6 +26,37 @@
     </item>
     
     <item>
+      <title>Running the latest Linux kernel</title>
+      <link>https://gtrafimenkov.github.io/post/2018-06-29-running-on-the-latest-stable-kernel/</link>
+      <pubDate>Fri, 29 Jun 2018 22:57:00 +0300</pubDate>
+      
+      <guid>https://gtrafimenkov.github.io/post/2018-06-29-running-on-the-latest-stable-kernel/</guid>
+      
+        <description>&lt;p&gt;When &lt;a href=&#34;https://meltdownattack.com/&#34;&gt;Meltdown and Spectre&lt;/a&gt; struck, it took Ubuntu a few days
+to release an updated kernel.  It made me think if I could run the latest unmodified (vanilla)
+kernel from &lt;a href=&#34;https://kernel.org&#34;&gt;kernel.org&lt;/a&gt; and didn&amp;rsquo;t have to wait for the distribution to
+release their version.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;As it turned out, running the latest kernel is a pleasant experience.  Only once I&amp;rsquo;ve encountered
+a bug, when WiFi on my laptop stopped working after upgrading to version 4.17.2.&lt;/p&gt;
+
+&lt;p&gt;There is a downside, of course: you have to built the kernel yourself.  Instructions and scripts
+for building a kernel for Debian/Ubuntu can be found here: &lt;a href=&#34;https://github.com/devops-toolkit/recent-stable-kernel&#34;&gt;devops-toolkit/recent-stable-kernel&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;On a side note, I was surprized to see how many changes are released every time.  It must be
+a difficult job for a distribution to analyze all these changes and try to pick important
+ones for their own kernel.  Especially since kernel developers almost never mark security
+fixes as such.&lt;/p&gt;
+
+&lt;p&gt;Here is &lt;a href=&#34;http://www.kroah.com/log/blog/2018/02/05/linux-kernel-release-model/&#34;&gt;a good blog post&lt;/a&gt;
+by Greg Kroah-Hartman, a kernel developer who is maintaining the stable kernel branch, about
+the linux kernel release and development models.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>How to build a debian package using Go</title>
       <link>https://gtrafimenkov.github.io/post/2018-06-29-build-deb-package-using-go/</link>
       <pubDate>Fri, 29 Jun 2018 21:13:06 +0300</pubDate>

@@ -26,6 +26,68 @@
     </item>
     
     <item>
+      <title>Intel Xeon vs AMD EPYC</title>
+      <link>https://gtrafimenkov.github.io/post/2018-09-09-intel-xeon-vs-amd-epyc/</link>
+      <pubDate>Sun, 09 Sep 2018 15:04:00 +0300</pubDate>
+      
+      <guid>https://gtrafimenkov.github.io/post/2018-09-09-intel-xeon-vs-amd-epyc/</guid>
+      
+        <description>&lt;p&gt;I was curious of how performant is the new AMD EPYC processor and did two practical
+tests:&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;building of the linux kernel as a test of multi-core performance&lt;/li&gt;
+&lt;li&gt;bzipping of a 10Gb file as a test of single-core performance.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Test systems:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.packet.net/bare-metal/servers/c2-medium-epyc/&#34;&gt;packet.net bare-metal c2-medium-epyc&lt;/a&gt; uses AMD EPYC 7401P&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.packet.net/bare-metal/servers/m1-xlarge/&#34;&gt;packet.net bare-metal m1-xlarge&lt;/a&gt; uses two Intel Xeon E5-2650 v4&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;They both systems are equipped with SSD drives.&lt;/p&gt;
+
+&lt;p&gt;Here are the results:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;|---------------------------------------------------------+-------+-------------------+----------------|
+| CPU                                                     | Cores | Kernel build time | 10GB bzip time |
+|---------------------------------------------------------+-------+-------------------+----------------|
+| AMD EPYC 7401P 24-Core Processor (SMT on)               |    48 | 5m43s             | 1m54s          |
+| AMD EPYC 7401P 24-Core Processor (SMT off)              |    24 | 6m53s             | 1m54s          |
+|                                                         |       |                   |                |
+| 2 x Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz (SMT on)  |    48 | 5m47s             | 1m46s          |
+| 2 x Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz (SMT off) |    24 | 6m58s             | 1m43s          |
+|---------------------------------------------------------+-------+-------------------+----------------|&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;The two systems are very close in terms of multi-core and single-core performance.&lt;/p&gt;
+
+&lt;p&gt;AMD EPYC 7401P costs almost the same as a single Intel Xeon E5-2650, but performs as two Intel
+processors.&lt;/p&gt;
+
+&lt;p&gt;As we can see, AMD EPYC is the clean winner in terms of performance per cpu cost.&lt;/p&gt;
+
+&lt;p&gt;Performance tests of other processors can be found at &lt;a href=&#34;https://github.com/gtrafimenkov/cloud-servers-performance&#34;&gt;github.com/gtrafimenkov/cloud-servers-performance&lt;/a&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Running the latest Linux kernel</title>
       <link>https://gtrafimenkov.github.io/post/2018-06-29-running-on-the-latest-stable-kernel/</link>
       <pubDate>Fri, 29 Jun 2018 22:57:00 +0300</pubDate>

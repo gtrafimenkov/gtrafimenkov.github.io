@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Secure and easy to use GnuPG setup - GT on the web</title>
+  <title>Aws · GT on the web</title>
   <link rel="alternate" hreflang="en" href="https://gtrafimenkov.github.io" />
 
 <meta name="renderer" content="webkit" />
@@ -25,10 +25,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 
-  <meta name="description" content="Using GnuPG requires balancing security against ease of use.
-
-" />
-
+  <meta name="description" content="Gennady Trafimenkov&#39;s blog" />
 
 
 
@@ -38,7 +35,8 @@
 <meta name="generator" content="Hugo 0.40.3" />
 
 
-<link rel="canonical" href="https://gtrafimenkov.github.io/post/2016-06-26-secure-and-easy-to-use-gnupg-setup/" />
+<link rel="canonical" href="https://gtrafimenkov.github.io/tags/aws/" />
+<link href="https://gtrafimenkov.github.io/tags/aws/index.xml" rel="alternate" type="application/rss+xml" title="GT on the web" />
 
 
 
@@ -58,18 +56,14 @@
 
 
 
-<meta property="og:title" content="Secure and easy to use GnuPG setup" />
-<meta property="og:description" content="Using GnuPG requires balancing security against ease of use.
-
-" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://gtrafimenkov.github.io/post/2016-06-26-secure-and-easy-to-use-gnupg-setup/" />
+<meta property="og:title" content="Aws" />
+<meta property="og:description" content="Gennady Trafimenkov&#39;s blog" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://gtrafimenkov.github.io/tags/aws/" />
 
 
 
-<meta property="article:published_time" content="2016-06-26T01:36:00&#43;03:00"/>
-
-<meta property="article:modified_time" content="2016-06-26T01:36:00&#43;03:00"/>
+<meta property="og:updated_time" content="2019-04-14T09:04:00&#43;03:00"/>
 
 
 
@@ -80,25 +74,12 @@
 
 
 
+<meta itemprop="name" content="Aws">
+<meta itemprop="description" content="Gennady Trafimenkov&#39;s blog">
 
-<meta itemprop="name" content="Secure and easy to use GnuPG setup">
-<meta itemprop="description" content="Using GnuPG requires balancing security against ease of use.
-
-">
-
-
-<meta itemprop="datePublished" content="2016-06-26T01:36:00&#43;03:00" />
-<meta itemprop="dateModified" content="2016-06-26T01:36:00&#43;03:00" />
-<meta itemprop="wordCount" content="391">
-
-
-
-<meta itemprop="keywords" content="security,gnupg," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Secure and easy to use GnuPG setup"/>
-<meta name="twitter:description" content="Using GnuPG requires balancing security against ease of use.
-
-"/>
+<meta name="twitter:title" content="Aws"/>
+<meta name="twitter:description" content="Gennady Trafimenkov&#39;s blog"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -255,135 +236,56 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          <article class="post bg-white">
+          
+
+<section id="archive" class="archive">
+  
     
-    <header class="post-header">
-      <h1 class="post-title">Secure and easy to use GnuPG setup</h1>
-      
-      <div class="post-meta">
-        <span class="post-time"> 2016-06-26 </span>
-        
-        <span class="more-meta"> 391 words </span>
-        <span class="more-meta"> 2 min read </span>
+      <div class="archive-title tag">
+        <h2 class="archive-name">Tag: Aws</h2>
       </div>
-    </header>
-
     
-    
-<div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">Table of Contents</h2>
-  <div class="post-toc-content">
-    
-  </div>
-</div>
+  
 
-    
-    <div class="post-content">
-      <p>Using GnuPG requires balancing security against ease of use.</p>
-
-<p></p>
-
-<p>I want to:</p>
-
-<ul>
-<li>keep my keys secure from theft and accidental loss</li>
-<li>use GnuPG regularly throughout the day, e.g. for signing Git commits and encrypting/signing emails</li>
-</ul>
-
-<p>These two goals go against each other.  The first requires that the key
-is stored on the extra secure system and the passphrase is strong.</p>
-
-<p>The second goal requires that the key is available on my regular
-machine and the passphrase is not very long and complicated, so it can be typed easily.</p>
-
-<p>There are many ways to strike the right balance.</p>
-
-<p>One of the ways is to use subkeys:</p>
-
-<ul>
-<li>keep the primary keypair on your extra secure system</li>
-<li>generate an additional signing subkey</li>
-<li>export subkeys to your regular machine; for everyday activity use only them</li>
-</ul>
-
-<p>If the subkeys are compromised or lost, they can be revoked from the secure machine and new ones can be generated.</p>
-
-<p>This is how you do such setup from scratch:</p>
-
-<ul>
-<li>on your secure system generate a new keypair, follow good pratices described in Gnu Privacy Handbook, use 4096 bit key</li>
-<li>generate a revocation certificate</li>
-<li>generate an additional signing subkey</li>
-<li>export secret subkeys to a file: <code>gpg --export-secret-subkeys --armor YOUR_KEY_ID &gt;my-secret-subkeys.txt</code>; this file also contains your public key</li>
-<li>copy this file to your regular machine</li>
-<li>and import it with <code>gpg --import my-secret-subkeys.txt</code></li>
-<li>change the passphrase to make these subkeys easier to use</li>
-<li>optionally send you key to the key server: <code>gpg --send-keys YOUR_KEY_ID</code></li>
-</ul>
-
-<p>Now you can use GPG easily on your regular machine while the primary key is kept safely on your secure machine.  Don&rsquo;t forget to log in to your secure machine from time to time and check that you still remember the primary key passphrase.</p>
-
-<p>Useful links:</p>
-
-<ul>
-<li><a href="https://www.gnupg.org/gph/en/manual.html">The GNU Privacy Handbook</a></li>
-<li><a href="https://wiki.debian.org/Subkeys">Subkeys / Using OpenPGP subkeys in Debian development</a></li>
-<li><a href="http://www.connexer.com/articles/openpgp-subkeys">Improve the Security of Your OpenPGP Key by Using Subkeys</a></li>
-<li><a href="https://alexcabal.com/creating-the-perfect-gpg-keypair/">Creating the perfect GPG keypair</a></li>
-<li><a href="https://security.stackexchange.com/questions/43590/pgp-why-have-separate-encryption-subkey">PGP - Why have separate encryption subkey</a></li>
-<li><a href="https://superuser.com/questions/879977/how-to-have-a-different-pass-phrase-for-a-gpg-subkey">How to have a different pass phrase for a gpg subkey?</a></li>
-</ul>
-
-<p>Some bonus links about signing Git commits:</p>
-
-<ul>
-<li><a href="https://programmers.stackexchange.com/questions/212192/what-are-the-advantages-and-disadvantages-of-cryptographically-signing-commits-a">What are the advantages and disadvantages of cryptographically signing commits and tags in Git</a></li>
-<li><a href="https://mikegerwitz.com/papers/git-horror-story">A Git Horror Story: Repository Integrity With Signed Commits</a></li>
-<li><a href="https://driesvints.com/blog/using-a-gpg-key-to-sign-off-git-commits-and-emails/">Using a GPG Key to Sign-Off Git Commits and Emails</a></li>
-</ul>
-
-<p>Later I might make another blog posts on signing Git commits and setting up the secure system.</p>
+  
+    <div class="archive-post">
+      <span class="archive-post-time">
+        2019-04-14
+      </span>
+      <span class="archive-post-title">
+        <a href="/post/2019-04-14-notes-on-passing-aws-solution-architect/" class="archive-post-link">
+          Notes on passing AWS Solutions Architect exam
+        </a>
+      </span>
     </div>
+  
+</section>
 
-    
-    
 
-    
-    
 
-    <footer class="post-footer">
-      <div class="post-tags">
-          
-          <a href="/tags/security/">security</a>
-          
-          <a href="/tags/gnupg/">gnupg</a>
-          
-        </div>
 
-      
-      <nav class="post-nav">
-        
-          <a class="prev" href="/post/2018-05-13-hcloud-with-terraform/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Hcloud With Terraform</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        
-          <a class="next" href="/post/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/">
-            <span class="next-text nav-default">How to use a physical harddrive in VirtualBox</span>
-            <span class="prev-text nav-mobile">Next</span>
-            <i class="iconfont icon-right"></i>
-          </a>
-      </nav>
-    </footer>
-    
 
+
+  
+  
   
 
   
+  
 
   
-  </article>
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
         </div>
       </div>
     </main>

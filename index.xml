@@ -26,6 +26,52 @@
     </item>
     
     <item>
+      <title>Notes on passing AWS Solutions Architect exam</title>
+      <link>https://gtrafimenkov.github.io/post/2019-04-14-notes-on-passing-aws-solution-architect/</link>
+      <pubDate>Sun, 14 Apr 2019 09:04:00 +0300</pubDate>
+      
+      <guid>https://gtrafimenkov.github.io/post/2019-04-14-notes-on-passing-aws-solution-architect/</guid>
+      
+        <description>&lt;p&gt;At the end of January 2019 I successfully passed AWS Solutions Architect Associate exam.
+Here are my notes on the preparation process and the exam itself.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;I started the preparation process in the beginning of December 2018 and finished it at the end of January 2019.
+It took me about 50 hours of dedicated work to prepare.  Before starting the process I had about a month
+of hands-on experience with AWS.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;materials used for preparation:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;video course &lt;a href=&#34;https://acloud.guru/learn/aws-certified-solutions-architect-associate&#34;&gt;AWS Certified Solutions Architect – Associate by acloud.guru&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;book &lt;a href=&#34;https://www.amazon.com/Certified-Advanced-Networking-Official-Study/dp/1119439833&#34;&gt;AWS Certified Solutions Architect: Official Study Guide&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;additional materials mentioned in the video course and the book: whitepapers, Well Architectured Framework, some FAQs;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I studied the video course and the book in parallel;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I tried to get hands-on experience with the services mentioned in the book and video;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;after finishing each topic I did quizzes and exercises.  Usually, I got 75-90% of answers right;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I passed the text exam with 100% of correct answers;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;right after finishing the test exam, I registered on the real exam in order not to lose any knowledge;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;on the real exam, in the beginning, I was worrying that I didn&amp;rsquo;t know the right answers to many questions,
+but it turned out alright.  I was able to finish all the questions in time and then go over those I wasn&amp;rsquo;t
+sure of.  At the end of the exam I wasn&amp;rsquo;t sure of only a few answers;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I passed the exam with 954 points out of 1000.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.certmetrics.com/amazon/public/badge.aspx?i=1&amp;amp;t=c&amp;amp;d=2019-01-30&amp;amp;ci=AWS00775433&#34;&gt;My certificate&lt;/a&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Intel Xeon vs AMD EPYC</title>
       <link>https://gtrafimenkov.github.io/post/2018-09-09-intel-xeon-vs-amd-epyc/</link>
       <pubDate>Sun, 09 Sep 2018 15:04:00 +0300</pubDate>

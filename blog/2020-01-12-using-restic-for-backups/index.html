@@ -4,21 +4,19 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Notes on passing AWS Solutions Architect exam - Gennady Trafimenkov</title>
+	<title>Using restic for backups - Gennady Trafimenkov</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-	<meta property="og:title" content="Notes on passing AWS Solutions Architect exam" />
-<meta property="og:description" content="At the end of January 2019 I successfully passed AWS Solutions Architect Associate exam.
-Here are my notes on the preparation process and the exam itself." />
+	<meta property="og:title" content="Using restic for backups" />
+<meta property="og:description" content="In this post I will show you how to use restic to backup data to Wasabi." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/blog/2018-09-09-notes-on-passing-aws-solution-architect/" />
-<meta property="article:published_time" content="2019-04-14T09:04:00+03:00" />
-<meta property="article:modified_time" content="2019-04-14T09:04:00+03:00" />
+<meta property="og:url" content="/blog/2020-01-12-using-restic-for-backups/" />
+<meta property="article:published_time" content="2020-01-12T19:06:28+03:00" />
+<meta property="article:modified_time" content="2020-01-12T19:06:28+03:00" />
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Notes on passing AWS Solutions Architect exam"/>
-<meta name="twitter:description" content="At the end of January 2019 I successfully passed AWS Solutions Architect Associate exam.
-Here are my notes on the preparation process and the exam itself."/>
+<meta name="twitter:title" content="Using restic for backups"/>
+<meta name="twitter:description" content="In this post I will show you how to use restic to backup data to Wasabi."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -47,60 +45,119 @@ Here are my notes on the preparation process and the exam itself."/>
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Notes on passing AWS Solutions Architect exam</h1>
+			<h1 class="post__title">Using restic for backups</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2019-04-14T09:04:00">2019-04-14</time>
+	<time class="meta__text" datetime="2020-01-12T19:06:28">2020-01-12</time>
 </div>
 </div>
 		</header><div class="content post__content clearfix">
-			<p>At the end of January 2019 I successfully passed AWS Solutions Architect Associate exam.
-Here are my notes on the preparation process and the exam itself.</p>
-<p>I started the preparation process in the beginning of December 2018 and finished it at the end of January 2019.
-It took me about 50 hours of dedicated work to prepare.  Before starting the process I had about a month
-of hands-on experience with AWS.</p>
+			<p><a href="https://github.com/restic/restic">restic</a> is a nice piece of software I am
+currently using to backup my personal files.  I also used it before to backup
+some production data at work.</p>
+<p>In this post I will show you how to use restic to backup data to Wasabi.</p>
+<p>restic supports different storage backends.  Currently I am using S3-compatible cloud
+storage provider <a href="https://wasabi.com/">Wasabi</a>.  The main advantage of Wasabi
+over AWS is that the outgoing traffic is free: if all of a sudden you need to download
+200Gb of data from Wasabi, it will be free, when in case of AWS it would cost
+approximately $20 in data transfer charges.  The only disadvantage of Wasabi I see
+is that the minimal monthly charges are $6.</p>
+<h2 id="create-a-new-bucket">Create a new bucket</h2>
+<p>E.g. &ldquo;gt-test-backup1&rdquo;.</p>
+<p><img src="/img/using-restic-for-backups/10-create-new-bucket.png" alt="create-new-bucket"></p>
+<h2 id="create-iam-policy-that-will-allow-creation-of-backups-but-not-removal">Create IAM policy that will allow creation of backups, but not removal</h2>
 <ul>
-<li>
-<p>materials used for preparation:</p>
+<li>Go to IAM, Policies, Create Policy</li>
+<li>give it a name, e.g. &ldquo;gt-test-backup1&rdquo;</li>
+<li>give it following policy, replace &ldquo;gt-test-backup1&rdquo; with the desired bucket name:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#f92672">&#34;Version&#34;</span>: <span style="color:#e6db74">&#34;2012-10-17&#34;</span>,
+  <span style="color:#f92672">&#34;Statement&#34;</span>: [
+    {
+      <span style="color:#f92672">&#34;Effect&#34;</span>: <span style="color:#e6db74">&#34;Allow&#34;</span>,
+      <span style="color:#f92672">&#34;Action&#34;</span>: [
+        <span style="color:#e6db74">&#34;s3:PutObject&#34;</span>,
+        <span style="color:#e6db74">&#34;s3:GetObject&#34;</span>
+      ],
+      <span style="color:#f92672">&#34;Resource&#34;</span>: <span style="color:#e6db74">&#34;arn:aws:s3:::gt-test-backup1/*&#34;</span>
+    },
+    {
+      <span style="color:#f92672">&#34;Effect&#34;</span>: <span style="color:#e6db74">&#34;Allow&#34;</span>,
+      <span style="color:#f92672">&#34;Action&#34;</span>: <span style="color:#e6db74">&#34;s3:DeleteObject&#34;</span>,
+      <span style="color:#f92672">&#34;Resource&#34;</span>: <span style="color:#e6db74">&#34;arn:aws:s3:::gt-test-backup1/restic/locks/*&#34;</span>
+    },
+    {
+      <span style="color:#f92672">&#34;Sid&#34;</span>: <span style="color:#e6db74">&#34;Stmt1457617230000&#34;</span>,
+      <span style="color:#f92672">&#34;Effect&#34;</span>: <span style="color:#e6db74">&#34;Allow&#34;</span>,
+      <span style="color:#f92672">&#34;Action&#34;</span>: <span style="color:#e6db74">&#34;s3:ListBucket&#34;</span>,
+      <span style="color:#f92672">&#34;Resource&#34;</span>: [
+        <span style="color:#e6db74">&#34;arn:aws:s3:::gt-test-backup1&#34;</span>,
+        <span style="color:#e6db74">&#34;arn:aws:s3:::gt-test-backup1/*&#34;</span>
+      ]
+    }
+  ]
+}
+</code></pre></div><p>Such policy will allow the user, who uses the policy, to add new backups, retrieve
+existing ones, but not to remove them.  With such a policy we can be sure that the
+backups will not be accidentally removed.</p>
+<p><img src="/img/using-restic-for-backups/20-add-policy.png" alt="add-policy"></p>
+<h2 id="create-a-separate-user-for-performing-backups">Create a separate user for performing backups</h2>
 <ul>
-<li>video course <a href="https://acloud.guru/learn/aws-certified-solutions-architect-associate">AWS Certified Solutions Architect – Associate by acloud.guru</a>;</li>
-<li>book <a href="https://www.amazon.com/Certified-Advanced-Networking-Official-Study/dp/1119439833">AWS Certified Solutions Architect: Official Study Guide</a>;</li>
-<li>additional materials mentioned in the video course and the book: whitepapers, Well Architectured Framework, some FAQs;</li>
+<li>Go to IAM, Users, Creat User</li>
+<li>give it a name, e.g. &ldquo;gt-test-backuper1&rdquo;</li>
+<li>choose Access = Programmatic (create API key)</li>
+<li>attach policy created in the previous step to this user</li>
+<li>copy Access Key and Secret Key of the new user</li>
 </ul>
-</li>
-<li>
-<p>I studied the video course and the book in parallel;</p>
-</li>
-<li>
-<p>I tried to get hands-on experience with the services mentioned in the book and video;</p>
-</li>
-<li>
-<p>after finishing each topic I did quizzes and exercises.  Usually, I got 75-90% of answers right;</p>
-</li>
-<li>
-<p>I passed the text exam with 100% of correct answers;</p>
-</li>
-<li>
-<p>right after finishing the test exam, I registered on the real exam in order not to lose any knowledge;</p>
-</li>
-<li>
-<p>on the real exam, in the beginning, I was worrying that I didn&rsquo;t know the right answers to many questions,
-but it turned out alright.  I was able to finish all the questions in time and then go over those I wasn&rsquo;t
-sure of.  At the end of the exam I wasn&rsquo;t sure of only a few answers;</p>
-</li>
-<li>
-<p>I passed the exam with 954 points out of 1000.</p>
-</li>
+<p><img src="/img/using-restic-for-backups/30-add-user.png" alt="add-user">
+<img src="/img/using-restic-for-backups/31-add-policy-to-user.png" alt="add-policy-to-user"></p>
+<h2 id="create-a-backup-script">Create a backup script</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>#
+<span style="color:#75715e"># Backup files to Wasabi using restic.</span>
+#
+<span style="color:#75715e"># Usage:</span>
+<span style="color:#75715e">#   restic-backup-wasabi.sh init</span>
+<span style="color:#75715e">#   restic-backup-wasabi.sh backup PATH_TO_FOLDER_OR_FILE</span>
+<span style="color:#75715e">#   restic-backup-wasabi.sh snapshots</span>
+<span style="color:#75715e">#   restic-backup-wasabi.sh restore SNAPSHOT_ID --target LOCAL_DIR</span>
+
+export AWS_ACCESS_KEY_ID<span style="color:#f92672">=</span>REPLACE_ME
+export AWS_SECRET_ACCESS_KEY<span style="color:#f92672">=</span>REPLACE_ME
+export RESTIC_PASSWORD<span style="color:#f92672">=</span>REPLACE_ME
+RESTIC_REPO<span style="color:#f92672">=</span>s3:https://s3.eu-central-1.wasabisys.com/gt-test-backup1/restic
+
+restic -r $RESTIC_REPO $*
+</code></pre></div><h2 id="init-the-restic-repository">Init the restic repository</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ restic-backup-wasabi.sh init
+created restic repository d5ae9a1eae at s3:https://s3.eu-central-1.wasabisys.com/gt-test-backup1/restic
+
+Please note that knowledge of your password is required to access
+the repository. Losing your password means that your data is
+irrecoverably lost.
+</code></pre></div><h2 id="now-you-are-ready-to-backup-and-restore-your-data">Now you are ready to backup and restore your data</h2>
+<p>To backup a directory or file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ restic-backup-wasabi.sh backup PATH
+</code></pre></div><p>To list available backups:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ restic-backup-wasabi.sh snapshots
+</code></pre></div><p>To restore a backup:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ restic-backup-wasabi.sh restore SNAPSHOT_ID --target LOCAL_DIR
+</code></pre></div><h2 id="links">Links</h2>
+<ul>
+<li><a href="https://github.com/restic/restic">https://github.com/restic/restic</a></li>
+<li><a href="https://wasabi.com/">https://wasabi.com/</a></li>
 </ul>
-<p><a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=1&amp;t=c&amp;d=2019-01-30&amp;ci=AWS00775433">My certificate</a>.</p>
+
 		</div>
 		<footer class="post__footer">
 			
 <div class="post__tags tags clearfix">
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
-		<li class="tags__item"><a class="tags__link btn" href="/tags/aws/" rel="tag">aws</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/backups/" rel="tag">backups</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/restic/" rel="tag">restic</a></li>
 	</ul>
 </div>
 		</footer>
@@ -121,10 +178,7 @@ sure of.  At the end of the exam I wasn&rsquo;t sure of only a few answers;</p>
 
 <nav class="post-nav flex">
 	<div class="post-nav__item post-nav__item--prev">
-		<a class="post-nav__link" href="/blog/2018-06-29-running-on-the-latest-stable-kernel/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Running the latest Linux kernel</p></a>
-	</div>
-	<div class="post-nav__item post-nav__item--next">
-		<a class="post-nav__link" href="/blog/2020-01-12-using-restic-for-backups/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Using restic for backups</p></a>
+		<a class="post-nav__link" href="/blog/2018-09-09-notes-on-passing-aws-solution-architect/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Notes on passing AWS Solutions Architect exam</p></a>
 	</div>
 </nav>
 

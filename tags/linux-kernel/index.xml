@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>linux-kernel on Gennady Trafimenkov</title>
-    <link>gtrafimenkov.github.io/tags/linux-kernel/</link>
+    <link>https://gtrafimenkov.github.io/tags/linux-kernel/</link>
     <description>Recent content in linux-kernel on Gennady Trafimenkov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 29 Jun 2018 22:57:00 +0300</lastBuildDate>
     
-	<atom:link href="gtrafimenkov.github.io/tags/linux-kernel/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gtrafimenkov.github.io/tags/linux-kernel/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Running the latest Linux kernel</title>
-      <link>gtrafimenkov.github.io/blog/2018-06-29-running-on-the-latest-stable-kernel/</link>
+      <link>https://gtrafimenkov.github.io/blog/2018-06-29-running-on-the-latest-stable-kernel/</link>
       <pubDate>Fri, 29 Jun 2018 22:57:00 +0300</pubDate>
       
-      <guid>gtrafimenkov.github.io/blog/2018-06-29-running-on-the-latest-stable-kernel/</guid>
+      <guid>https://gtrafimenkov.github.io/blog/2018-06-29-running-on-the-latest-stable-kernel/</guid>
       <description>&lt;p&gt;When &lt;a href=&#34;https://meltdownattack.com/&#34;&gt;Meltdown and Spectre&lt;/a&gt; struck, it took Ubuntu a few days
 to release an updated kernel.  It made me think if I could run the latest unmodified (vanilla)
 kernel from &lt;a href=&#34;https://kernel.org&#34;&gt;kernel.org&lt;/a&gt; and didn&amp;rsquo;t have to wait for the distribution to

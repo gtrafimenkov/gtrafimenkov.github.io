@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>howto on Gennady Trafimenkov</title>
-    <link>gtrafimenkov.github.io/tags/howto/</link>
+    <link>https://gtrafimenkov.github.io/tags/howto/</link>
     <description>Recent content in howto on Gennady Trafimenkov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 29 Jun 2018 21:13:06 +0300</lastBuildDate>
     
-	<atom:link href="gtrafimenkov.github.io/tags/howto/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gtrafimenkov.github.io/tags/howto/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to build a debian package using Go</title>
-      <link>gtrafimenkov.github.io/blog/2018-06-29-build-deb-package-using-go/</link>
+      <link>https://gtrafimenkov.github.io/blog/2018-06-29-build-deb-package-using-go/</link>
       <pubDate>Fri, 29 Jun 2018 21:13:06 +0300</pubDate>
       
-      <guid>gtrafimenkov.github.io/blog/2018-06-29-build-deb-package-using-go/</guid>
+      <guid>https://gtrafimenkov.github.io/blog/2018-06-29-build-deb-package-using-go/</guid>
       <description>&lt;p&gt;Here is a quick example of how to build a debian package programmatically.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to use a physical harddrive in VirtualBox</title>
-      <link>gtrafimenkov.github.io/blog/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/</link>
+      <link>https://gtrafimenkov.github.io/blog/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/</link>
       <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>gtrafimenkov.github.io/blog/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/</guid>
+      <guid>https://gtrafimenkov.github.io/blog/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/</guid>
       <description>&lt;p&gt;In some cases it might be very convinient to use a physical harddrive (USB stick, SD card, etc.) as a disk for a virtual machine.  It is quite easy on Linux.&lt;/p&gt;</description>
     </item>
     

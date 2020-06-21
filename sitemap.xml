@@ -3,137 +3,137 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>gtrafimenkov.github.io/tags/backups/</loc>
+    <loc>https://gtrafimenkov.github.io/tags/backups/</loc>
     <lastmod>2020-01-12T19:06:28+03:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/blog/</loc>
+    <loc>https://gtrafimenkov.github.io/blog/</loc>
     <lastmod>2020-01-12T19:06:28+03:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/categories/</loc>
+    <loc>https://gtrafimenkov.github.io/categories/</loc>
     <lastmod>2020-01-12T19:06:28+03:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/categories/devops/</loc>
+    <loc>https://gtrafimenkov.github.io/categories/devops/</loc>
     <lastmod>2020-01-12T19:06:28+03:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/</loc>
+    <loc>https://gtrafimenkov.github.io/</loc>
     <lastmod>2020-01-12T19:06:28+03:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/tags/restic/</loc>
+    <loc>https://gtrafimenkov.github.io/tags/restic/</loc>
     <lastmod>2020-01-12T19:06:28+03:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/tags/</loc>
+    <loc>https://gtrafimenkov.github.io/tags/</loc>
     <lastmod>2020-01-12T19:06:28+03:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/blog/2020-01-12-using-restic-for-backups/</loc>
+    <loc>https://gtrafimenkov.github.io/blog/2020-01-12-using-restic-for-backups/</loc>
     <lastmod>2020-01-12T19:06:28+03:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/tags/aws/</loc>
+    <loc>https://gtrafimenkov.github.io/tags/aws/</loc>
     <lastmod>2019-04-14T09:04:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/categories/cloud/</loc>
+    <loc>https://gtrafimenkov.github.io/categories/cloud/</loc>
     <lastmod>2019-04-14T09:04:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/blog/2018-09-09-notes-on-passing-aws-solution-architect/</loc>
+    <loc>https://gtrafimenkov.github.io/blog/2018-09-09-notes-on-passing-aws-solution-architect/</loc>
     <lastmod>2019-04-14T09:04:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/tags/linux-kernel/</loc>
+    <loc>https://gtrafimenkov.github.io/tags/linux-kernel/</loc>
     <lastmod>2018-06-29T22:57:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/blog/2018-06-29-running-on-the-latest-stable-kernel/</loc>
+    <loc>https://gtrafimenkov.github.io/blog/2018-06-29-running-on-the-latest-stable-kernel/</loc>
     <lastmod>2018-06-29T22:57:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/tags/deb/</loc>
+    <loc>https://gtrafimenkov.github.io/tags/deb/</loc>
     <lastmod>2018-06-29T21:13:06+03:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/tags/go/</loc>
+    <loc>https://gtrafimenkov.github.io/tags/go/</loc>
     <lastmod>2018-06-29T21:13:06+03:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/blog/2018-06-29-build-deb-package-using-go/</loc>
+    <loc>https://gtrafimenkov.github.io/blog/2018-06-29-build-deb-package-using-go/</loc>
     <lastmod>2018-06-29T21:13:06+03:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/tags/howto/</loc>
+    <loc>https://gtrafimenkov.github.io/tags/howto/</loc>
     <lastmod>2018-06-29T21:13:06+03:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/tags/hcloud/</loc>
+    <loc>https://gtrafimenkov.github.io/tags/hcloud/</loc>
     <lastmod>2018-05-13T00:22:06+03:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/blog/2018-05-13-hcloud-with-terraform/</loc>
+    <loc>https://gtrafimenkov.github.io/blog/2018-05-13-hcloud-with-terraform/</loc>
     <lastmod>2018-05-13T00:22:06+03:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/tags/terraform/</loc>
+    <loc>https://gtrafimenkov.github.io/tags/terraform/</loc>
     <lastmod>2018-05-13T00:22:06+03:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/tags/gnupg/</loc>
+    <loc>https://gtrafimenkov.github.io/tags/gnupg/</loc>
     <lastmod>2016-06-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/blog/2016-06-26-secure-and-easy-to-use-gnupg-setup/</loc>
+    <loc>https://gtrafimenkov.github.io/blog/2016-06-26-secure-and-easy-to-use-gnupg-setup/</loc>
     <lastmod>2016-06-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/tags/security/</loc>
+    <loc>https://gtrafimenkov.github.io/tags/security/</loc>
     <lastmod>2016-06-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/blog/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/</loc>
+    <loc>https://gtrafimenkov.github.io/blog/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/</loc>
     <lastmod>2016-06-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/tags/virtualbox/</loc>
+    <loc>https://gtrafimenkov.github.io/tags/virtualbox/</loc>
     <lastmod>2016-06-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/tags/redis/</loc>
+    <loc>https://gtrafimenkov.github.io/tags/redis/</loc>
     <lastmod>2016-06-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>gtrafimenkov.github.io/blog/2016-06-18-slave-of-no-one/</loc>
+    <loc>https://gtrafimenkov.github.io/blog/2016-06-18-slave-of-no-one/</loc>
     <lastmod>2016-06-18T00:00:00+00:00</lastmod>
   </url>
   

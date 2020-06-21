@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Gennady Trafimenkov</title>
-    <link>gtrafimenkov.github.io/blog/</link>
+    <link>https://gtrafimenkov.github.io/blog/</link>
     <description>Recent content in Blogs on Gennady Trafimenkov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Jan 2020 19:06:28 +0300</lastBuildDate>
     
-	<atom:link href="gtrafimenkov.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gtrafimenkov.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using restic for backups</title>
-      <link>gtrafimenkov.github.io/blog/2020-01-12-using-restic-for-backups/</link>
+      <link>https://gtrafimenkov.github.io/blog/2020-01-12-using-restic-for-backups/</link>
       <pubDate>Sun, 12 Jan 2020 19:06:28 +0300</pubDate>
       
-      <guid>gtrafimenkov.github.io/blog/2020-01-12-using-restic-for-backups/</guid>
+      <guid>https://gtrafimenkov.github.io/blog/2020-01-12-using-restic-for-backups/</guid>
       <description>In this post I will show you how to use restic to backup data to Wasabi.</description>
     </item>
     
     <item>
       <title>Notes on passing AWS Solutions Architect exam</title>
-      <link>gtrafimenkov.github.io/blog/2018-09-09-notes-on-passing-aws-solution-architect/</link>
+      <link>https://gtrafimenkov.github.io/blog/2018-09-09-notes-on-passing-aws-solution-architect/</link>
       <pubDate>Sun, 14 Apr 2019 09:04:00 +0300</pubDate>
       
-      <guid>gtrafimenkov.github.io/blog/2018-09-09-notes-on-passing-aws-solution-architect/</guid>
+      <guid>https://gtrafimenkov.github.io/blog/2018-09-09-notes-on-passing-aws-solution-architect/</guid>
       <description>&lt;p&gt;At the end of January 2019 I successfully passed AWS Solutions Architect Associate exam.
 Here are my notes on the preparation process and the exam itself.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Running the latest Linux kernel</title>
-      <link>gtrafimenkov.github.io/blog/2018-06-29-running-on-the-latest-stable-kernel/</link>
+      <link>https://gtrafimenkov.github.io/blog/2018-06-29-running-on-the-latest-stable-kernel/</link>
       <pubDate>Fri, 29 Jun 2018 22:57:00 +0300</pubDate>
       
-      <guid>gtrafimenkov.github.io/blog/2018-06-29-running-on-the-latest-stable-kernel/</guid>
+      <guid>https://gtrafimenkov.github.io/blog/2018-06-29-running-on-the-latest-stable-kernel/</guid>
       <description>&lt;p&gt;When &lt;a href=&#34;https://meltdownattack.com/&#34;&gt;Meltdown and Spectre&lt;/a&gt; struck, it took Ubuntu a few days
 to release an updated kernel.  It made me think if I could run the latest unmodified (vanilla)
 kernel from &lt;a href=&#34;https://kernel.org&#34;&gt;kernel.org&lt;/a&gt; and didn&amp;rsquo;t have to wait for the distribution to
@@ -44,47 +44,47 @@ release their version.&lt;/p&gt;</description>
     
     <item>
       <title>How to build a debian package using Go</title>
-      <link>gtrafimenkov.github.io/blog/2018-06-29-build-deb-package-using-go/</link>
+      <link>https://gtrafimenkov.github.io/blog/2018-06-29-build-deb-package-using-go/</link>
       <pubDate>Fri, 29 Jun 2018 21:13:06 +0300</pubDate>
       
-      <guid>gtrafimenkov.github.io/blog/2018-06-29-build-deb-package-using-go/</guid>
+      <guid>https://gtrafimenkov.github.io/blog/2018-06-29-build-deb-package-using-go/</guid>
       <description>&lt;p&gt;Here is a quick example of how to build a debian package programmatically.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hcloud With Terraform</title>
-      <link>gtrafimenkov.github.io/blog/2018-05-13-hcloud-with-terraform/</link>
+      <link>https://gtrafimenkov.github.io/blog/2018-05-13-hcloud-with-terraform/</link>
       <pubDate>Sun, 13 May 2018 00:22:06 +0300</pubDate>
       
-      <guid>gtrafimenkov.github.io/blog/2018-05-13-hcloud-with-terraform/</guid>
+      <guid>https://gtrafimenkov.github.io/blog/2018-05-13-hcloud-with-terraform/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.hetzner.com/cloud&#34;&gt;Hetzner Cloud&lt;/a&gt; is an excellent cloud provider.&lt;/p&gt;
 &lt;p&gt;Here is a quick example of how to create a server on Hetzner Cloud using Terraform.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Secure and easy to use GnuPG setup</title>
-      <link>gtrafimenkov.github.io/blog/2016-06-26-secure-and-easy-to-use-gnupg-setup/</link>
+      <link>https://gtrafimenkov.github.io/blog/2016-06-26-secure-and-easy-to-use-gnupg-setup/</link>
       <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>gtrafimenkov.github.io/blog/2016-06-26-secure-and-easy-to-use-gnupg-setup/</guid>
+      <guid>https://gtrafimenkov.github.io/blog/2016-06-26-secure-and-easy-to-use-gnupg-setup/</guid>
       <description>&lt;p&gt;Using GnuPG requires balancing security against ease of use.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to use a physical harddrive in VirtualBox</title>
-      <link>gtrafimenkov.github.io/blog/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/</link>
+      <link>https://gtrafimenkov.github.io/blog/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/</link>
       <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>gtrafimenkov.github.io/blog/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/</guid>
+      <guid>https://gtrafimenkov.github.io/blog/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/</guid>
       <description>&lt;p&gt;In some cases it might be very convinient to use a physical harddrive (USB stick, SD card, etc.) as a disk for a virtual machine.  It is quite easy on Linux.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Slave of no one</title>
-      <link>gtrafimenkov.github.io/blog/2016-06-18-slave-of-no-one/</link>
+      <link>https://gtrafimenkov.github.io/blog/2016-06-18-slave-of-no-one/</link>
       <pubDate>Sat, 18 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>gtrafimenkov.github.io/blog/2016-06-18-slave-of-no-one/</guid>
+      <guid>https://gtrafimenkov.github.io/blog/2016-06-18-slave-of-no-one/</guid>
       <description>&lt;p&gt;Authors of &lt;a href=&#34;http://redis.io&#34;&gt;redis&lt;/a&gt; have their hearts in the right place.&lt;/p&gt;</description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>redis on Gennady Trafimenkov</title>
-    <link>gtrafimenkov.github.io/tags/redis/</link>
+    <link>https://gtrafimenkov.github.io/tags/redis/</link>
     <description>Recent content in redis on Gennady Trafimenkov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 18 Jun 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="gtrafimenkov.github.io/tags/redis/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gtrafimenkov.github.io/tags/redis/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Slave of no one</title>
-      <link>gtrafimenkov.github.io/blog/2016-06-18-slave-of-no-one/</link>
+      <link>https://gtrafimenkov.github.io/blog/2016-06-18-slave-of-no-one/</link>
       <pubDate>Sat, 18 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>gtrafimenkov.github.io/blog/2016-06-18-slave-of-no-one/</guid>
+      <guid>https://gtrafimenkov.github.io/blog/2016-06-18-slave-of-no-one/</guid>
       <description>&lt;p&gt;Authors of &lt;a href=&#34;http://redis.io&#34;&gt;redis&lt;/a&gt; have their hearts in the right place.&lt;/p&gt;</description>
     </item>
     

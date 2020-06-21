@@ -4,22 +4,24 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>gnupg - Gennady Trafimenkov</title>
+	<title>Using git-crypt to store secrets in git - Gennady Trafimenkov</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-	<meta property="og:title" content="gnupg" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://gtrafimenkov.github.io/tags/gnupg/" />
-<meta property="og:updated_time" content="2020-06-22T00:47:53+03:00" />
+	<meta property="og:title" content="Using git-crypt to store secrets in git" />
+<meta property="og:description" content="In this post I will show you how to store secrets
+in a git repository using git-crypt." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gtrafimenkov.github.io/blog/2020-06-22-git-crypt-to-store-secrets-in-git/" />
+<meta property="article:published_time" content="2020-06-22T00:47:53+03:00" />
+<meta property="article:modified_time" content="2020-06-22T00:47:53+03:00" />
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="gnupg"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Using git-crypt to store secrets in git"/>
+<meta name="twitter:description" content="In this post I will show you how to store secrets
+in a git repository using git-crypt."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link rel="alternate" type="application/rss+xml" href="/tags/gnupg/index.xml" title="Gennady Trafimenkov">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/custom.css">
@@ -42,51 +44,116 @@
 		<div class="wrapper flex">
 			<div class="primary">
 			
-<main class="main list" role="main">
-	<header class="main__header">
-		<h1 class="main__title">gnupg</h1>
-	</header><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/blog/2020-06-22-git-crypt-to-store-secrets-in-git/" rel="bookmark">
-			Using git-crypt to store secrets in git
-			</a>
-		</h3>
-		<div class="list__meta meta">
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Using git-crypt to store secrets in git</h1>
+			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
 	<time class="meta__text" datetime="2020-06-22T00:47:53">2020-06-22</time>
 </div>
 </div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		<p>In this post I will show you how to store secrets
+		</header><div class="content post__content clearfix">
+			<p>In this post I will show you how to store secrets
 in a git repository using <a href="https://github.com/AGWA/git-crypt">git-crypt</a>.</p>
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/blog/2016-06-26-secure-and-easy-to-use-gnupg-setup/" rel="bookmark">
-			Secure and easy to use GnuPG setup
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2016-06-26T00:00:00">2016-06-26</time>
+<p>It goes without saying that secrets should not be committed
+to a git repository in plain text.  They should be encrypted.
+<em>git-crypt</em> is a tool for that.</p>
+<p>First of all, you will need GPG key set up.  If you don&rsquo;t have it:</p>
+<ul>
+<li>
+<p>install GnuPG and create a new key</p>
+<pre><code>sudo apt install gnupg2
+gpg --quick-gen-key john.doe@something.com
+</code></pre></li>
+<li>
+<p>export your key (<code>gpg --export-secret-keys --armor john.doe@something.com &gt;private-key.txt</code>) and store it in a safe place for backup</p>
+</li>
+</ul>
+<p>Prepare git repository for storing secrets:</p>
+<ul>
+<li>install git-crypt (on Ubuntu 18.04+ it is <code>sudo apt install git-crypt</code>)</li>
+<li>go to your git repository and execute <code>git-crypt init</code></li>
+<li>then allow your user to access secrets of the repository: <code>git-crypt add-gpg-user john.doe@something.com</code></li>
+<li>create directory for storing secrets: <code>mkdir secrets</code></li>
+<li>enable encryption of this directory: <code>echo 'secrets/** filter=git-crypt diff=git-crypt' &gt;.gitattributes</code></li>
+<li>unlock repository (decrypt all secrets in the repository): <code>git-crypt unlock</code></li>
+<li>create a new secret: <code>echo hello &gt;secrets/testsecret.txt</code></li>
+<li>store changes: <code>git add . &amp;&amp; git commit -m &quot;add test secret&quot;</code></li>
+<li>lock the repository (encrypt all the secrets): <code>git-crypt lock</code></li>
+<li>take a look inside of <code>secrets/testsecret.txt</code> and see that it is indeed encrypted</li>
+<li>take a look at the history and see that the secret is not shown: <code>git log -p secrets/testsecret.txt</code>
+<pre><code>$ git log -p secrets/testsecret.txt
+commit f2609e2f099da28bca8cfa5285c8eca10c06bbbc (HEAD -&gt; master, origin/master, origin/HEAD)
+Author: Your Name &lt;you@example.com&gt;
+Date:   Sun Jun 21 21:24:56 2020 +0000
+
+    add test secret
+
+diff --git a/secrets/testsecret.txt b/secrets/testsecret.txt
+new file mode 100644
+index 0000000..fb4854e
+Binary files /dev/null and b/secrets/testsecret.txt differ
+</code></pre></li>
+<li>unlock repository again: <code>git-crypt unlock</code></li>
+<li>take a look inside of <code>secrets/testsecret.txt</code> and see that it is unencrypted now</li>
+<li>take a look at the history and see that the secret is visible now: <code>git log -p secrets/testsecret.txt</code>
+<pre><code>$ git log -p secrets/testsecret.txt
+commit f2609e2f099da28bca8cfa5285c8eca10c06bbbc (HEAD -&gt; master, origin/master, origin/HEAD)
+Author: Your Name &lt;you@example.com&gt;
+Date:   Sun Jun 21 21:24:56 2020 +0000
+
+    add test secret
+
+diff --git a/secrets/testsecret.txt b/secrets/testsecret.txt
+new file mode 100644
+index 0000000..fb4854e
+--- /dev/null
++++ b/secrets/testsecret.txt
+@@ -0,0 +1 @@
++hello
+</code></pre></li>
+</ul>
+<p>When you push your changes to a remote repository it doesn&rsquo;t matter if your local repository is locked or unlocked - in both cases only encrypted files will be transfered.</p>
+<p>As you can see, <code>git-crypt</code> is quite easy to setup and use.  I&rsquo;ve been using it
+for storing secrets for about 4 years and never had problems with it.  It works very well.</p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/git/" rel="tag">git</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/gnupg/" rel="tag">gnupg</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/secrets/" rel="tag">secrets</a></li>
+	</ul>
 </div>
-</div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		<p>Using GnuPG requires balancing security against ease of use.</p>
-	</div>
-</article>
+		</footer>
+	</article>
 </main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Gennady Trafimenkov avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Gennady Trafimenkov</span>
+	</div>
+	<div class="authorbox__description">
+		I am a passionate DevOps and Software Engineer with 20 years of experience under by belt, certified AWS Solutions Architect, SysOps Administrator.  I am available for consulting work. Drop me a line if you need help.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/blog/2020-01-12-using-restic-for-backups/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Using restic for backups</p></a>
+	</div>
+</nav>
 
 
 			</div>
-			
-<aside class="sidebar"><div class="widget-search widget">
+			<aside class="sidebar"><div class="widget-search widget">
 	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
 		<label>
 			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">

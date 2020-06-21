@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Gennady Trafimenkov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jan 2020 19:06:28 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2020 00:47:53 +0300</lastBuildDate>
     
 	<atom:link href="https://gtrafimenkov.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>git</title>
+      <link>https://gtrafimenkov.github.io/tags/git/</link>
+      <pubDate>Mon, 22 Jun 2020 00:47:53 +0300</pubDate>
+      
+      <guid>https://gtrafimenkov.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gnupg</title>
+      <link>https://gtrafimenkov.github.io/tags/gnupg/</link>
+      <pubDate>Mon, 22 Jun 2020 00:47:53 +0300</pubDate>
+      
+      <guid>https://gtrafimenkov.github.io/tags/gnupg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>secrets</title>
+      <link>https://gtrafimenkov.github.io/tags/secrets/</link>
+      <pubDate>Mon, 22 Jun 2020 00:47:53 +0300</pubDate>
+      
+      <guid>https://gtrafimenkov.github.io/tags/secrets/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>backups</title>
@@ -89,15 +116,6 @@
       <pubDate>Sun, 13 May 2018 00:22:06 +0300</pubDate>
       
       <guid>https://gtrafimenkov.github.io/tags/terraform/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>gnupg</title>
-      <link>https://gtrafimenkov.github.io/tags/gnupg/</link>
-      <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://gtrafimenkov.github.io/tags/gnupg/</guid>
       <description></description>
     </item>
     

@@ -1,30 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on GT on the web</title>
-    <link>https://gtrafimenkov.github.io/categories/</link>
-    <description>Recent content in Categories on GT on the web</description>
+    <title>Categories on Gennady Trafimenkov</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on Gennady Trafimenkov</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Apr 2019 09:04:00 +0300</lastBuildDate>
     
-	<atom:link href="https://gtrafimenkov.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Cloud</title>
-      <link>https://gtrafimenkov.github.io/categories/cloud/</link>
+      <title>cloud</title>
+      <link>/categories/cloud/</link>
       <pubDate>Sun, 14 Apr 2019 09:04:00 +0300</pubDate>
       
-      <guid>https://gtrafimenkov.github.io/categories/cloud/</guid>
+      <guid>/categories/cloud/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Devops</title>
-      <link>https://gtrafimenkov.github.io/categories/devops/</link>
-      <pubDate>Sun, 09 Sep 2018 15:04:00 +0300</pubDate>
+      <title>devops</title>
+      <link>/categories/devops/</link>
+      <pubDate>Fri, 29 Jun 2018 22:57:00 +0300</pubDate>
       
-      <guid>https://gtrafimenkov.github.io/categories/devops/</guid>
+      <guid>/categories/devops/</guid>
       <description></description>
     </item>
     

@@ -1,214 +1,125 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<?xml-stylesheet type="text/xsl" href="https://gtrafimenkov.github.io/sitemap.xsl"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://gtrafimenkov.github.io/about/</loc>
-    <lastmod>2017-08-28T21:41:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gtrafimenkov.github.io/post/2019-04-14-notes-on-passing-aws-solution-architect/</loc>
+    <loc>/tags/aws/</loc>
     <lastmod>2019-04-14T09:04:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://gtrafimenkov.github.io/post/2018-09-09-intel-xeon-vs-amd-epyc/</loc>
-    <lastmod>2018-09-09T15:04:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <loc>/blog/</loc>
+    <lastmod>2019-04-14T09:04:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://gtrafimenkov.github.io/post/2018-06-29-running-on-the-latest-stable-kernel/</loc>
+    <loc>/categories/</loc>
+    <lastmod>2019-04-14T09:04:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/cloud/</loc>
+    <lastmod>2019-04-14T09:04:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-04-14T09:04:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2018-09-09-notes-on-passing-aws-solution-architect/</loc>
+    <lastmod>2019-04-14T09:04:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-04-14T09:04:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/devops/</loc>
     <lastmod>2018-06-29T22:57:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://gtrafimenkov.github.io/post/2018-06-29-build-deb-package-using-go/</loc>
-    <lastmod>2018-06-29T21:13:06+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gtrafimenkov.github.io/post/2018-05-13-hcloud-with-terraform/</loc>
-    <lastmod>2018-05-13T00:22:06+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gtrafimenkov.github.io/post/2016-06-26-secure-and-easy-to-use-gnupg-setup/</loc>
-    <lastmod>2016-06-26T01:36:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gtrafimenkov.github.io/post/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/</loc>
-    <lastmod>2016-06-19T12:04:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gtrafimenkov.github.io/post/2016-06-18-slave-of-no-one/</loc>
-    <lastmod>2016-06-18T21:54:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gtrafimenkov.github.io/tags/amd/</loc>
-    <lastmod>2018-09-09T15:04:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gtrafimenkov.github.io/tags/aws/</loc>
-    <lastmod>2019-04-14T09:04:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gtrafimenkov.github.io/categories/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gtrafimenkov.github.io/categories/cloud/</loc>
-    <lastmod>2019-04-14T09:04:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gtrafimenkov.github.io/tags/deb/</loc>
-    <lastmod>2018-06-29T21:13:06+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gtrafimenkov.github.io/categories/devops/</loc>
-    <lastmod>2018-09-09T15:04:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gtrafimenkov.github.io/tags/epyc/</loc>
-    <lastmod>2018-09-09T15:04:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gtrafimenkov.github.io/</loc>
-    <lastmod>2017-08-28T21:41:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gtrafimenkov.github.io/tags/gnupg/</loc>
-    <lastmod>2016-06-26T01:36:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gtrafimenkov.github.io/tags/go/</loc>
-    <lastmod>2018-06-29T21:13:06+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gtrafimenkov.github.io/tags/hcloud/</loc>
-    <lastmod>2018-05-13T00:22:06+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gtrafimenkov.github.io/tags/howto/</loc>
-    <lastmod>2018-06-29T21:13:06+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gtrafimenkov.github.io/tags/intel/</loc>
-    <lastmod>2018-09-09T15:04:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gtrafimenkov.github.io/tags/linux-kernel/</loc>
+    <loc>/tags/linux-kernel/</loc>
     <lastmod>2018-06-29T22:57:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://gtrafimenkov.github.io/tags/performance/</loc>
-    <lastmod>2018-09-09T15:04:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
+    <loc>/blog/2018-06-29-running-on-the-latest-stable-kernel/</loc>
+    <lastmod>2018-06-29T22:57:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://gtrafimenkov.github.io/post/</loc>
-    <lastmod>2019-04-14T09:04:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
+    <loc>/tags/deb/</loc>
+    <lastmod>2018-06-29T21:13:06+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://gtrafimenkov.github.io/tags/redis/</loc>
-    <lastmod>2016-06-18T21:54:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
+    <loc>/tags/go/</loc>
+    <lastmod>2018-06-29T21:13:06+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://gtrafimenkov.github.io/tags/security/</loc>
-    <lastmod>2016-06-26T01:36:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
+    <loc>/blog/2018-06-29-build-deb-package-using-go/</loc>
+    <lastmod>2018-06-29T21:13:06+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://gtrafimenkov.github.io/tags/</loc>
-    <lastmod>2018-09-09T15:04:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
+    <loc>/tags/howto/</loc>
+    <lastmod>2018-06-29T21:13:06+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://gtrafimenkov.github.io/tags/terraform/</loc>
+    <loc>/tags/hcloud/</loc>
     <lastmod>2018-05-13T00:22:06+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://gtrafimenkov.github.io/tags/virtualbox/</loc>
-    <lastmod>2016-06-19T12:04:00+03:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
+    <loc>/blog/2018-05-13-hcloud-with-terraform/</loc>
+    <lastmod>2018-05-13T00:22:06+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/terraform/</loc>
+    <lastmod>2018-05-13T00:22:06+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/gnupg/</loc>
+    <lastmod>2016-06-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2016-06-26-secure-and-easy-to-use-gnupg-setup/</loc>
+    <lastmod>2016-06-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/security/</loc>
+    <lastmod>2016-06-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/</loc>
+    <lastmod>2016-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/virtualbox/</loc>
+    <lastmod>2016-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/redis/</loc>
+    <lastmod>2016-06-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2016-06-18-slave-of-no-one/</loc>
+    <lastmod>2016-06-18T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>

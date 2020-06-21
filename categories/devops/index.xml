@@ -1,64 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Devops on GT on the web</title>
-    <link>https://gtrafimenkov.github.io/categories/devops/</link>
-    <description>Recent content in Devops on GT on the web</description>
+    <title>devops on Gennady Trafimenkov</title>
+    <link>/categories/devops/</link>
+    <description>Recent content in devops on Gennady Trafimenkov</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 09 Sep 2018 15:04:00 +0300</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Jun 2018 22:57:00 +0300</lastBuildDate>
     
-	<atom:link href="https://gtrafimenkov.github.io/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/devops/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Intel Xeon vs AMD EPYC</title>
-      <link>https://gtrafimenkov.github.io/post/2018-09-09-intel-xeon-vs-amd-epyc/</link>
-      <pubDate>Sun, 09 Sep 2018 15:04:00 +0300</pubDate>
-      
-      <guid>https://gtrafimenkov.github.io/post/2018-09-09-intel-xeon-vs-amd-epyc/</guid>
-      <description>&lt;p&gt;I was curious of how performant is the new AMD EPYC processor and did two practical
-tests:&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>Running the latest Linux kernel</title>
-      <link>https://gtrafimenkov.github.io/post/2018-06-29-running-on-the-latest-stable-kernel/</link>
+      <link>/blog/2018-06-29-running-on-the-latest-stable-kernel/</link>
       <pubDate>Fri, 29 Jun 2018 22:57:00 +0300</pubDate>
       
-      <guid>https://gtrafimenkov.github.io/post/2018-06-29-running-on-the-latest-stable-kernel/</guid>
+      <guid>/blog/2018-06-29-running-on-the-latest-stable-kernel/</guid>
       <description>&lt;p&gt;When &lt;a href=&#34;https://meltdownattack.com/&#34;&gt;Meltdown and Spectre&lt;/a&gt; struck, it took Ubuntu a few days
 to release an updated kernel.  It made me think if I could run the latest unmodified (vanilla)
 kernel from &lt;a href=&#34;https://kernel.org&#34;&gt;kernel.org&lt;/a&gt; and didn&amp;rsquo;t have to wait for the distribution to
-release their version.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+release their version.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to build a debian package using Go</title>
-      <link>https://gtrafimenkov.github.io/post/2018-06-29-build-deb-package-using-go/</link>
+      <link>/blog/2018-06-29-build-deb-package-using-go/</link>
       <pubDate>Fri, 29 Jun 2018 21:13:06 +0300</pubDate>
       
-      <guid>https://gtrafimenkov.github.io/post/2018-06-29-build-deb-package-using-go/</guid>
-      <description>&lt;p&gt;Here is a quick example of how to build a debian package programmatically.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <guid>/blog/2018-06-29-build-deb-package-using-go/</guid>
+      <description>&lt;p&gt;Here is a quick example of how to build a debian package programmatically.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hcloud With Terraform</title>
-      <link>https://gtrafimenkov.github.io/post/2018-05-13-hcloud-with-terraform/</link>
+      <link>/blog/2018-05-13-hcloud-with-terraform/</link>
       <pubDate>Sun, 13 May 2018 00:22:06 +0300</pubDate>
       
-      <guid>https://gtrafimenkov.github.io/post/2018-05-13-hcloud-with-terraform/</guid>
+      <guid>/blog/2018-05-13-hcloud-with-terraform/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.hetzner.com/cloud&#34;&gt;Hetzner Cloud&lt;/a&gt; is an excellent cloud provider.&lt;/p&gt;
-
-&lt;p&gt;Here is a quick example of how to create a server on Hetzner Cloud using Terraform.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;Here is a quick example of how to create a server on Hetzner Cloud using Terraform.&lt;/p&gt;</description>
     </item>
     
   </channel>

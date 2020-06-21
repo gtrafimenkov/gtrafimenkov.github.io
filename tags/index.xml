@@ -1,148 +1,112 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on GT on the web</title>
-    <link>https://gtrafimenkov.github.io/tags/</link>
-    <description>Recent content in Tags on GT on the web</description>
+    <title>Tags on Gennady Trafimenkov</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Gennady Trafimenkov</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 09 Sep 2018 15:04:00 +0300</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Apr 2019 09:04:00 +0300</lastBuildDate>
     
-	<atom:link href="https://gtrafimenkov.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Amd</title>
-      <link>https://gtrafimenkov.github.io/tags/amd/</link>
-      <pubDate>Sun, 09 Sep 2018 15:04:00 +0300</pubDate>
-      
-      <guid>https://gtrafimenkov.github.io/tags/amd/</guid>
-      <description></description>
-    </item>
     
     <item>
-      <title>Aws</title>
-      <link>https://gtrafimenkov.github.io/tags/aws/</link>
+      <title>aws</title>
+      <link>/tags/aws/</link>
       <pubDate>Sun, 14 Apr 2019 09:04:00 +0300</pubDate>
       
-      <guid>https://gtrafimenkov.github.io/tags/aws/</guid>
+      <guid>/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Deb</title>
-      <link>https://gtrafimenkov.github.io/tags/deb/</link>
+      <title>linux-kernel</title>
+      <link>/tags/linux-kernel/</link>
+      <pubDate>Fri, 29 Jun 2018 22:57:00 +0300</pubDate>
+      
+      <guid>/tags/linux-kernel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deb</title>
+      <link>/tags/deb/</link>
       <pubDate>Fri, 29 Jun 2018 21:13:06 +0300</pubDate>
       
-      <guid>https://gtrafimenkov.github.io/tags/deb/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Epyc</title>
-      <link>https://gtrafimenkov.github.io/tags/epyc/</link>
-      <pubDate>Sun, 09 Sep 2018 15:04:00 +0300</pubDate>
-      
-      <guid>https://gtrafimenkov.github.io/tags/epyc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gnupg</title>
-      <link>https://gtrafimenkov.github.io/tags/gnupg/</link>
-      <pubDate>Sun, 26 Jun 2016 01:36:00 +0300</pubDate>
-      
-      <guid>https://gtrafimenkov.github.io/tags/gnupg/</guid>
+      <guid>/tags/deb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go</title>
-      <link>https://gtrafimenkov.github.io/tags/go/</link>
+      <link>/tags/go/</link>
       <pubDate>Fri, 29 Jun 2018 21:13:06 +0300</pubDate>
       
-      <guid>https://gtrafimenkov.github.io/tags/go/</guid>
+      <guid>/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Hcloud</title>
-      <link>https://gtrafimenkov.github.io/tags/hcloud/</link>
-      <pubDate>Sun, 13 May 2018 00:22:06 +0300</pubDate>
-      
-      <guid>https://gtrafimenkov.github.io/tags/hcloud/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Howto</title>
-      <link>https://gtrafimenkov.github.io/tags/howto/</link>
+      <title>howto</title>
+      <link>/tags/howto/</link>
       <pubDate>Fri, 29 Jun 2018 21:13:06 +0300</pubDate>
       
-      <guid>https://gtrafimenkov.github.io/tags/howto/</guid>
+      <guid>/tags/howto/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Intel</title>
-      <link>https://gtrafimenkov.github.io/tags/intel/</link>
-      <pubDate>Sun, 09 Sep 2018 15:04:00 +0300</pubDate>
-      
-      <guid>https://gtrafimenkov.github.io/tags/intel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux Kernel</title>
-      <link>https://gtrafimenkov.github.io/tags/linux-kernel/</link>
-      <pubDate>Fri, 29 Jun 2018 22:57:00 +0300</pubDate>
-      
-      <guid>https://gtrafimenkov.github.io/tags/linux-kernel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Performance</title>
-      <link>https://gtrafimenkov.github.io/tags/performance/</link>
-      <pubDate>Sun, 09 Sep 2018 15:04:00 +0300</pubDate>
-      
-      <guid>https://gtrafimenkov.github.io/tags/performance/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Redis</title>
-      <link>https://gtrafimenkov.github.io/tags/redis/</link>
-      <pubDate>Sat, 18 Jun 2016 21:54:00 +0300</pubDate>
-      
-      <guid>https://gtrafimenkov.github.io/tags/redis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Security</title>
-      <link>https://gtrafimenkov.github.io/tags/security/</link>
-      <pubDate>Sun, 26 Jun 2016 01:36:00 +0300</pubDate>
-      
-      <guid>https://gtrafimenkov.github.io/tags/security/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Terraform</title>
-      <link>https://gtrafimenkov.github.io/tags/terraform/</link>
+      <title>hcloud</title>
+      <link>/tags/hcloud/</link>
       <pubDate>Sun, 13 May 2018 00:22:06 +0300</pubDate>
       
-      <guid>https://gtrafimenkov.github.io/tags/terraform/</guid>
+      <guid>/tags/hcloud/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Virtualbox</title>
-      <link>https://gtrafimenkov.github.io/tags/virtualbox/</link>
-      <pubDate>Sun, 19 Jun 2016 12:04:00 +0300</pubDate>
+      <title>terraform</title>
+      <link>/tags/terraform/</link>
+      <pubDate>Sun, 13 May 2018 00:22:06 +0300</pubDate>
       
-      <guid>https://gtrafimenkov.github.io/tags/virtualbox/</guid>
+      <guid>/tags/terraform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gnupg</title>
+      <link>/tags/gnupg/</link>
+      <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/gnupg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>/tags/security/</link>
+      <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>virtualbox</title>
+      <link>/tags/virtualbox/</link>
+      <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/virtualbox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>redis</title>
+      <link>/tags/redis/</link>
+      <pubDate>Sat, 18 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/redis/</guid>
       <description></description>
     </item>
     

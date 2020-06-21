@@ -78,6 +78,31 @@
   </url>
   
   <url>
+    <loc>https://gtrafimenkov.github.io/tags/amd/</loc>
+    <lastmod>2018-09-09T15:04:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gtrafimenkov.github.io/tags/epyc/</loc>
+    <lastmod>2018-09-09T15:04:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gtrafimenkov.github.io/tags/intel/</loc>
+    <lastmod>2018-09-09T15:04:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gtrafimenkov.github.io/blog/2018-09-09-intel-xeon-vs-amd-epyc/</loc>
+    <lastmod>2018-09-09T15:04:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gtrafimenkov.github.io/tags/performance/</loc>
+    <lastmod>2018-09-09T15:04:00+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gtrafimenkov.github.io/tags/linux-kernel/</loc>
     <lastmod>2018-06-29T22:57:00+03:00</lastmod>
   </url>

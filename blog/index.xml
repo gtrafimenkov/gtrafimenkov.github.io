@@ -41,6 +41,15 @@ Here are my notes on the preparation process and the exam itself.&lt;/p&gt;</des
     </item>
     
     <item>
+      <title>Intel Xeon vs AMD EPYC</title>
+      <link>https://gtrafimenkov.github.io/blog/2018-09-09-intel-xeon-vs-amd-epyc/</link>
+      <pubDate>Sun, 09 Sep 2018 15:04:00 +0300</pubDate>
+      
+      <guid>https://gtrafimenkov.github.io/blog/2018-09-09-intel-xeon-vs-amd-epyc/</guid>
+      <description>I was curious about AMD EPYC processor performance and did two practical tests.</description>
+    </item>
+    
+    <item>
       <title>Running the latest Linux kernel</title>
       <link>https://gtrafimenkov.github.io/blog/2018-06-29-running-on-the-latest-stable-kernel/</link>
       <pubDate>Fri, 29 Jun 2018 22:57:00 +0300</pubDate>

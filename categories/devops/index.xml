@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>devops on Gennady Trafimenkov</title>
-    <link>/categories/devops/</link>
+    <link>gtrafimenkov.github.io/categories/devops/</link>
     <description>Recent content in devops on Gennady Trafimenkov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Jan 2020 19:06:28 +0300</lastBuildDate>
     
-	<atom:link href="/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="gtrafimenkov.github.io/categories/devops/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using restic for backups</title>
-      <link>/blog/2020-01-12-using-restic-for-backups/</link>
+      <link>gtrafimenkov.github.io/blog/2020-01-12-using-restic-for-backups/</link>
       <pubDate>Sun, 12 Jan 2020 19:06:28 +0300</pubDate>
       
-      <guid>/blog/2020-01-12-using-restic-for-backups/</guid>
+      <guid>gtrafimenkov.github.io/blog/2020-01-12-using-restic-for-backups/</guid>
       <description>In this post I will show you how to use restic to backup data to Wasabi.</description>
     </item>
     
     <item>
       <title>Running the latest Linux kernel</title>
-      <link>/blog/2018-06-29-running-on-the-latest-stable-kernel/</link>
+      <link>gtrafimenkov.github.io/blog/2018-06-29-running-on-the-latest-stable-kernel/</link>
       <pubDate>Fri, 29 Jun 2018 22:57:00 +0300</pubDate>
       
-      <guid>/blog/2018-06-29-running-on-the-latest-stable-kernel/</guid>
+      <guid>gtrafimenkov.github.io/blog/2018-06-29-running-on-the-latest-stable-kernel/</guid>
       <description>&lt;p&gt;When &lt;a href=&#34;https://meltdownattack.com/&#34;&gt;Meltdown and Spectre&lt;/a&gt; struck, it took Ubuntu a few days
 to release an updated kernel.  It made me think if I could run the latest unmodified (vanilla)
 kernel from &lt;a href=&#34;https://kernel.org&#34;&gt;kernel.org&lt;/a&gt; and didn&amp;rsquo;t have to wait for the distribution to
@@ -34,19 +34,19 @@ release their version.&lt;/p&gt;</description>
     
     <item>
       <title>How to build a debian package using Go</title>
-      <link>/blog/2018-06-29-build-deb-package-using-go/</link>
+      <link>gtrafimenkov.github.io/blog/2018-06-29-build-deb-package-using-go/</link>
       <pubDate>Fri, 29 Jun 2018 21:13:06 +0300</pubDate>
       
-      <guid>/blog/2018-06-29-build-deb-package-using-go/</guid>
+      <guid>gtrafimenkov.github.io/blog/2018-06-29-build-deb-package-using-go/</guid>
       <description>&lt;p&gt;Here is a quick example of how to build a debian package programmatically.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hcloud With Terraform</title>
-      <link>/blog/2018-05-13-hcloud-with-terraform/</link>
+      <link>gtrafimenkov.github.io/blog/2018-05-13-hcloud-with-terraform/</link>
       <pubDate>Sun, 13 May 2018 00:22:06 +0300</pubDate>
       
-      <guid>/blog/2018-05-13-hcloud-with-terraform/</guid>
+      <guid>gtrafimenkov.github.io/blog/2018-05-13-hcloud-with-terraform/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.hetzner.com/cloud&#34;&gt;Hetzner Cloud&lt;/a&gt; is an excellent cloud provider.&lt;/p&gt;
 &lt;p&gt;Here is a quick example of how to create a server on Hetzner Cloud using Terraform.&lt;/p&gt;</description>
     </item>

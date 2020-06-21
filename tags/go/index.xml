@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on Gennady Trafimenkov</title>
-    <link>/tags/go/</link>
+    <link>gtrafimenkov.github.io/tags/go/</link>
     <description>Recent content in Go on Gennady Trafimenkov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 29 Jun 2018 21:13:06 +0300</lastBuildDate>
     
-	<atom:link href="/tags/go/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="gtrafimenkov.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to build a debian package using Go</title>
-      <link>/blog/2018-06-29-build-deb-package-using-go/</link>
+      <link>gtrafimenkov.github.io/blog/2018-06-29-build-deb-package-using-go/</link>
       <pubDate>Fri, 29 Jun 2018 21:13:06 +0300</pubDate>
       
-      <guid>/blog/2018-06-29-build-deb-package-using-go/</guid>
+      <guid>gtrafimenkov.github.io/blog/2018-06-29-build-deb-package-using-go/</guid>
       <description>&lt;p&gt;Here is a quick example of how to build a debian package programmatically.&lt;/p&gt;</description>
     </item>
     

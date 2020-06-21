@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>virtualbox on Gennady Trafimenkov</title>
-    <link>/tags/virtualbox/</link>
+    <link>gtrafimenkov.github.io/tags/virtualbox/</link>
     <description>Recent content in virtualbox on Gennady Trafimenkov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Jun 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="gtrafimenkov.github.io/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to use a physical harddrive in VirtualBox</title>
-      <link>/blog/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/</link>
+      <link>gtrafimenkov.github.io/blog/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/</link>
       <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/</guid>
+      <guid>gtrafimenkov.github.io/blog/2016-06-19-how-to-use-a-physical-harddrive-in-virtualbox/</guid>
       <description>&lt;p&gt;In some cases it might be very convinient to use a physical harddrive (USB stick, SD card, etc.) as a disk for a virtual machine.  It is quite easy on Linux.&lt;/p&gt;</description>
     </item>
     

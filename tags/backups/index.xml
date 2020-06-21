@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>backups on Gennady Trafimenkov</title>
-    <link>/tags/backups/</link>
+    <link>gtrafimenkov.github.io/tags/backups/</link>
     <description>Recent content in backups on Gennady Trafimenkov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Jan 2020 19:06:28 +0300</lastBuildDate>
     
-	<atom:link href="/tags/backups/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="gtrafimenkov.github.io/tags/backups/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using restic for backups</title>
-      <link>/blog/2020-01-12-using-restic-for-backups/</link>
+      <link>gtrafimenkov.github.io/blog/2020-01-12-using-restic-for-backups/</link>
       <pubDate>Sun, 12 Jan 2020 19:06:28 +0300</pubDate>
       
-      <guid>/blog/2020-01-12-using-restic-for-backups/</guid>
+      <guid>gtrafimenkov.github.io/blog/2020-01-12-using-restic-for-backups/</guid>
       <description>In this post I will show you how to use restic to backup data to Wasabi.</description>
     </item>
     
